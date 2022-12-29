@@ -9,9 +9,9 @@ type LayoutProps = {
 
 const Layout = ({ introduction, children, footer }: LayoutProps) => {
     return (
-        <div className='container mx-auto border rounded px-2 py-2 my-1'>
+        <div className='max-w-5xl w-11/12 mx-auto'>
             {introduction}
-            {children = <Content/>}
+            {children = <Content/> }
             {footer}
         </div>
     );

@@ -8,7 +8,7 @@ type ProjectItemProps = {
 
 const ProjectItem = ({ id, title, imageUrl, stack, link }: ProjectItemProps) => {
   return (
-    <div key={id} className='max-w-sm rounded overflow-hidden shadow-lg'>
+    <div key={id} className='max-w-sm rounded overflow-hidden shadow hover:shadow-2xl'>
       <img className='w-full' src={imageUrl} />
       <div className='px-5 py-4'>
         <div className='font-bold text-xl mb-2'>
@@ -19,7 +19,7 @@ const ProjectItem = ({ id, title, imageUrl, stack, link }: ProjectItemProps) => 
             <span key={id} className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>{item}</span>
           ))}
         </div>
-        <button className='text-white-300 hover:text-back hover:bg-gray-300 border text-xs font-semibold rounded-full px-2 py-2 leading-normal'>
+        <button className='text-white-300 hover:text-back hover:bg-neutral-100 border text-xs font-semibold rounded-full px-2 py-2 leading-normal'>
           <a href={link}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

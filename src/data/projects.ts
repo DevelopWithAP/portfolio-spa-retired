@@ -33,7 +33,14 @@ export default [
         id: 4,
         title: 'Mailer',
         imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/mail.png',
-        stack: ['Python', 'Django', 'Javascript'],
+        stack: ['Python', 'Django', 'Javascript', 'HTML', 'Bootstrap CSS'],
         link: `${GITHUB_BASE_URL}/mail`
     },
+    {
+        id: 5,
+        title: 'Network',
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/network.png',
+        stack: ['Python', 'Django,', 'JavaScript', 'HTML', 'Bootstrap CSS'],
+        link: `${GITHUB_BASE_URL}/network`
+    }
 ];
