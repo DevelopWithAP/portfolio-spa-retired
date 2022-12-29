@@ -2,7 +2,7 @@ import Projects from '../Projects/Projects';
 
 const Content = () => {
   return (
-    <div className='container text-center'>
+    <div className='container mx-auto text-center'>
       {< Projects />}
     </div>
   );

@@ -9,11 +9,11 @@ type LayoutProps = {
 
 const Layout = ({ introduction, children, footer }: LayoutProps) => {
     return (
-        <div className='max-w-5xl w-11/12 mx-auto'>
+        <>
             {introduction}
             {children = <Content/> }
             {footer}
-        </div>
+        </>
     );
 };
 
