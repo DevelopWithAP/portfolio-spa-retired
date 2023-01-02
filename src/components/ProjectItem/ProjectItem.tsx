@@ -1,4 +1,6 @@
-type ProjectItemProps = {
+import ProjectItemInfo, { ProjectItemInfoProps } from "./ProjectItemInfo";
+
+type ProjectItemProps = ProjectItemInfoProps & {
   id?: number;
   title: string;
   imageUrl: string;
@@ -6,11 +8,12 @@ type ProjectItemProps = {
   link: string;
 };
 
-const ProjectItem = ({ id, title, imageUrl, stack, link }: ProjectItemProps) => {
+const ProjectItem = ({ id, title, imageUrl, stack, link, challenge, solution, features, handleMouseOut, handleMouseOver }: ProjectItemProps) => {
   return (
     <div key={id} className='max-w-sm rounded overflow-hidden shadow hover:shadow-2xl'>
       <img className='w-full' src={imageUrl} />
       <div className='px-5 py-4'>
+      <ProjectItemInfo challenge={challenge} solution={solution} features={features} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}/>
         <div className='font-bold text-xl mb-2'>
           {title}
         </div>

@@ -13,6 +13,9 @@ const Projects = () => {
            key={p.id}
            id={p.id} 
            title={p.title}
+           challenge={p.challenge}
+           solution={p.solution}
+           features={p.features}
            imageUrl={p.imageUrl}
            link={p.link}
            stack={p.stack}
