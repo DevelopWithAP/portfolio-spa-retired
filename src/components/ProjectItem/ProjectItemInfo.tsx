@@ -18,12 +18,11 @@ const ProjectItemInfo = ({ challenge, solution, features }: ProjectItemInfoProps
         setIsHovering(false);
     };
 
-
     return (
         <div>
             <HoverableInfoDiv handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver} />
             {isHovering && (
-                <div className='border rounded mx-1 my-1'>
+                <div className='border rounded mx-1 my-1 p-2 divide-y'>  
                     <p>Challenge: {challenge}</p>
                     <p>Solution: {solution}</p>
                     <p>Features: {features}</p>

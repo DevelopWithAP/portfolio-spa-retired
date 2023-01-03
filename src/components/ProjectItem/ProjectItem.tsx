@@ -13,10 +13,10 @@ const ProjectItem = ({ id, title, imageUrl, stack, link, challenge, solution, fe
     <div key={id} className='max-w-sm rounded overflow-hidden shadow hover:shadow-2xl'>
       <img className='w-full' src={imageUrl} />
       <div className='px-5 py-4'>
-      <ProjectItemInfo challenge={challenge} solution={solution} features={features} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}/>
         <div className='font-bold text-xl mb-2'>
           {title}
         </div>
+        <ProjectItemInfo challenge={challenge} solution={solution} features={features} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}/>
         <div className='px-6 pt-4 pb-2'>
           {stack.map((item, id) => (
             <span key={id} className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>{item}</span>
