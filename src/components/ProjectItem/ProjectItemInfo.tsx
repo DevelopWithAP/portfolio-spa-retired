@@ -22,14 +22,14 @@ const ProjectItemInfo = ({ challenge, solution, features }: ProjectItemInfoProps
         <div>
             <HoverableInfoDiv handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver} />
             {isHovering && (
-                <div className='border rounded mx-1 my-1 p-2 divide-y'>  
-                    <p>Challenge: {challenge}</p>
-                    <p>Solution: {solution}</p>
-                    <p>Features: {features}</p>
+                <div className='border rounded mx-1 my-1 p-2 divide-y bg-neutral-200 dark:bg-slate-600'>
+                    <p><span className='text-neutral-400 underline'>Challenge</span>: {challenge}</p>
+                    <p><span className='text-neutral-400 underline'>Solution</span>: {solution}</p>
+                    <p><span className='text-neutral-400 underline'>Features</span>: {features}</p>
                 </div>
             )}
         </div>
     );
-};
+}
 
 export default ProjectItemInfo;
