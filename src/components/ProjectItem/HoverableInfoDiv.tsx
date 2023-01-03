@@ -1,6 +1,6 @@
 export type HoverableInfoDivProps = {
-    handleMouseOver: () => void;
-    handleMouseOut: () => void;
+    handleMouseOver?: () => void;
+    handleMouseOut?: () => void;
 };
 
 const HoverableInfoDiv = ({ handleMouseOut, handleMouseOver }: HoverableInfoDivProps) => {
