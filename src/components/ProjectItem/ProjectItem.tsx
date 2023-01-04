@@ -11,7 +11,7 @@ type ProjectItemProps = ProjectItemInfoProps & {
 const ProjectItem = ({ id, title, imageUrl, stack, link, challenge, solution, features, handleMouseOut, handleMouseOver }: ProjectItemProps) => {
   return (
     <div key={id} className='max-w-sm rounded overflow-hidden shadow hover:shadow-2xl'>
-      <img className='w-full' src={imageUrl} />
+      <img className='h-48 w-96' src={imageUrl} />
       <div className='px-5 py-4'>
         <div className='font-bold text-xl mb-2'>
           {title}
@@ -46,7 +46,7 @@ const ProjectItem = ({ id, title, imageUrl, stack, link, challenge, solution, fe
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectItem;

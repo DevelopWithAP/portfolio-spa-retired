@@ -7,7 +7,7 @@ export default [
         challenge: `To develop a RESTful back end service`,
         solution: `An Express Web Detail that utilises AWS Lambda`,
         features: `Third-party API integration, secure user data management`,
-        imageUrl: '',
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/movies-back-end.jpg',
         stack: ['Node.js', 'TypeScript', 'Docker', 'MongoDB', 'AWS Lambda'],
         link: `${GITHUB_BASE_URL}/movies-app-be`
     },
@@ -17,7 +17,7 @@ export default [
         challenge: `To build a feature rich UI as a Web client for the Movies App backend`,
         solution: `A React UI built with TypeScript that allows users to sign up, filter by selected parameters as well as 'favourite' an entry.`,
         features: `Responsive design, custom styling, form validation`,
-        imageUrl: '',
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/movies-front-end.png',
         stack: ['React', 'TypeScript', 'CSS'],
         link: `${GITHUB_BASE_URL}/movies-app-fe`
     },
