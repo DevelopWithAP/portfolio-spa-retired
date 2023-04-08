@@ -1,4 +1,5 @@
-export const GITHUB_BASE_URL = 'https://www.github.com/DevelopWithAP'; 
+const GITHUB_BASE_URL = 'https://www.github.com/DevelopWithAP'; 
+
 
 export default [
     {
@@ -48,7 +49,7 @@ export default [
         solution: `A Django RESTful client with a vanilla JavaScript UI.`,
         features: `UI is intuitive and updated asynchronously via JavaScript. Data is persisted on the server.`,
         imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/mail.png',
-        stack: ['Python', 'Django', 'Javascript', 'HTML', 'Bootstrap CSS'],
+        stack: ['Python', 'Django', 'JavaScript', 'HTML', 'Bootstrap CSS'],
         link: `${GITHUB_BASE_URL}/mail`
     },
     {
@@ -58,7 +59,47 @@ export default [
         solution: `A Django RESTful server with a vanilla JavaScript UI.`,
         features: `Supports all CRUD operations and functionality such as 'liking' a 'post'.`,
         imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/network.png',
-        stack: ['Python', 'Django,', 'JavaScript', 'HTML', 'Bootstrap CSS'],
+        stack: ['Python', 'Django', 'JavaScript', 'HTML', 'Bootstrap CSS'],
         link: `${GITHUB_BASE_URL}/network`
+    },
+    {
+        id: 6,
+        title: 'Auction',
+        challenge: `To build a full stack clone of an auction site.`,
+        solution: `A Django MVC.`,
+        features: `Supports all CRUD operations and functionalities such adding to a wishlist, bidding and commenting on an auction item.`,
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/commerce.png',
+        stack: ['Python', 'Django', 'HTML', 'Bootstrap CSS'],
+        link: `${GITHUB_BASE_URL}/commerce`
+    },
+    {
+        id: 7,
+        title: 'My Store',
+        challenge: `To build a client for an ecommerce store.`,
+        solution: `An SPA built with Angular.`,
+        features: `A fully responsive UI that allows users to view all products, view product details, add product to their cart.`,
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/my_store.png',
+        stack: ['Angular', 'TypeScript', 'HTML', 'Bootstrap CSS'],
+        link: `${GITHUB_BASE_URL}/my-store`
+    },
+    {
+        id: 8,
+        title: 'Quality Control',
+        challenge: `To build an MVP to act as a logbook for Speciality Coffee shops.`,
+        solution: `A Django MVC with a custom admin panel.`,
+        features: `Supports all CRUD operations. Provides enhanced admin features.`,
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/calibration.png',
+        stack: ['Python', 'Django', 'HTML', 'Bootstrap CSS', 'PostgreSQL', 'Heroku'],
+        link: `${GITHUB_BASE_URL}/quality_control`
+    },
+    {
+        id: 9,
+        title: 'Hack Assembler',
+        challenge: `To build an assembler for a low level language that runs on the Hack computer.`,
+        solution: 'A functional Python script.',
+        features: 'Accepts input written in the Hack Assembly Language and outputs platform-specific Machine Code',
+        imageUrl: 'https://my-portfolio-static.s3.eu-west-2.amazonaws.com/static/images/hack-assembler-image.png',
+        stack: ['Python'],
+        link: `${GITHUB_BASE_URL}/hack-assembler`
     }
 ];
